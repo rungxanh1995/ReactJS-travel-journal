@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+	position: relative;
+	min-height: 55px;
+	background: #F55A5A;
+	display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section {
+	padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.bold {
+	font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.uppercase {
+	text-transform: uppercase;
+}
+
+.gray {
+	color: #918E9B;
+}
+
+.nav--title {
+	margin: auto;
+	vertical-align: center;
+}
+
+.nav--logo {
+	display: inline;
+	vertical-align: middle;
+	padding: 0 7px;
+}
+
+.nav--title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1em;
+	letter-spacing: -0.075em;
+	color: #FFFFFF;
+}
+
+
+.cards-list {
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	/*flex-wrap: nowrap;*/
+	gap: 20px;
+	overflow-x: auto;
+}
+
+.card {
+	margin: 20px auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.card--image {
+	width: 126px;
+	height: 168px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-bottom: 9px;
+	margin-right: 20px;
+}
+
+.card--location {
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+
+.card--title {
+	margin: 10px 0;
+	font-size: 0.8em;
+}
+
+.card--text-expand {
+	letter-spacing: 0.17em;
+}
+
+.card--text-content {
+	color: #2B283A;
+}
+
+.card--location-icon {
+	height: 14px;
+	padding-right: 6px;
+}
+
+.card--location-text {
+	font-weight: 400;
+	font-size: 0.75em;
+	min-height: 14px;
+	padding-right: 6px;
+}
+
+.card--location-map-url {
+	font-weight: 400;
+	font-size: 0.75em;
+	min-height: 14px;
+	text-decoration-line: underline;
+}
+
+.card--title {
+	font-weight: 700;
+	font-size: 1.55em;
+	min-height: 30px;
+}
+
+.card--travel-date {
+	font-weight: 700;
+	font-size: 0.8em;
+	padding: 6px 0;
+}
+
+.card--description {
+	font-weight: 400;
+	font-size: 0.8em;
+	line-height: 150%;
 }
