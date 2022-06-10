@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import cardsData from "./data";
 import Card from "./components/Card";
+import SectionDivider from "./components/SectionDivider";
 
 
 function App() {
@@ -21,9 +22,12 @@ export default App;
 
 function apiDataToCardComponentFrom(/*Object[]*/ data) {
 	return data.map(item =>
-		<Card
-			key={item.id}
-			item={item}
-		/>
+		<div>
+			<Card
+				key={item.id}
+				item={item}
+			/>
+			<SectionDivider/>
+		</div>
 	);
 }
